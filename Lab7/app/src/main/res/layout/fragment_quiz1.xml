@@ -1,0 +1,63 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/questionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="32dp"
+            android:layout_centerHorizontal="true"
+            android:text="안드로이드 프로그래밍에 가장 많이 사용되는 언어는?" />
+
+        <RadioGroup
+            android:id="@+id/optionsRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/questionTextView"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp">
+
+            <RadioButton
+                android:id="@+id/option1RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C언어" />
+
+            <RadioButton
+                android:id="@+id/option2RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="파이썬" />
+
+            <RadioButton
+                android:id="@+id/option3RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C++" />
+
+            <RadioButton
+                android:id="@+id/option4RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="자바" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/next02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="다음 문제"
+            android:layout_below="@+id/optionsRadioGroup"
+            android:layout_alignRight="@+id/optionsRadioGroup">
+        </Button>
+    </RelativeLayout>
+
+</FrameLayout>

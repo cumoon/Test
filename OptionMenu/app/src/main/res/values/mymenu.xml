@@ -1,0 +1,19 @@
+ <?xml version="1.0" encoding="utf-8"?>
+    <menu xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/blue"
+            android:icon = "@android:drawable/btn_star_big_on"
+            android:title="파랑색"
+            app:showAsAction="always" />
+        <item
+            android:id="@+id/green"
+            android:icon="@android:drawable/ic_btn_speak_now"
+            android:title="초록색"
+            app:showAsAction="always" />
+        <item
+            android:id="@+id/red"
+            android:icon="@android:drawable/checkbox_on_background"
+            android:title="빨강색"
+            app:showAsAction="always" />
+    </menu>

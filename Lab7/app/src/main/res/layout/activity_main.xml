@@ -1,0 +1,34 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFEB3B"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/quizAppText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="퀴즈 앱 입니다."
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:textStyle="bold"
+        android:textSize="28sp"/>/>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시작"
+        android:layout_below="@id/quizAppText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+        android:layout_centerInParent="true" />
+
+</LinearLayout>
+
