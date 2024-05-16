@@ -9,17 +9,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Musicservice">
 
-        <service
-            android:name=".MusicService"
-            android:enabled="true"
-            /> <!-- 중복 선언 제거 및 android:exported="true" 명시 -->
-
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true"> <!-- intent할 때 액티비티 구성요소가 다른 앱에서 접근 하도록 지정  -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".MusicService"
+            android:enabled="true" /> <!-- 중복 선언 제거 및 android:exported="true" 명시 -->
+
 
     </application>
 </manifest>
